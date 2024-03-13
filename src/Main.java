@@ -1,5 +1,6 @@
 import model.Doctor;
 import model.Patient;
+import model.User;
 
 import java.util.Date;
 
@@ -44,6 +45,8 @@ public class Main {
 
         System.out.println("--Mostrando citas--");
         System.out.println(myDoctor.getAvailableAppointments());
+
+
 
     }
 }
