@@ -13,6 +13,8 @@ public class Doctor extends User {
     }
 
 
+
+
     public void showSpeciallity(){
         System.out.println("Especialidad: " + speciality);
     }
@@ -61,5 +63,12 @@ public class Doctor extends User {
         public void setTime(String time) {
             this.time = time;
         }
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Hospital: Cruz Roja");
+        System.out.println("Departamento: Cancerología");
+        System.out.println("Nombre: " + this.getName());
     }
 }

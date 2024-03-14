@@ -35,8 +35,10 @@ public class Patient extends User{
         return "Birthday: " + this.birthday;
     }
 
-
-
-
-
+    @Override
+    public void showDataUser() {
+        System.out.println("Paciente");
+        System.out.println("Historial completo del paciente.");
+        System.out.println(this.getName());
+    }
 }

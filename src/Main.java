@@ -21,7 +21,7 @@ public class Main {
        // showMenu();
         // al ser void, tener importado desde menu ui packege y tenerlo de modo static lo puedo llamar sin tener que anteponer .
         //model.Patient patient = new model.Patient("Alejandra", " alejandra@mail.com");
-        Patient paciente2 = new Patient("Facundo Peralta", "eldelasfotos@mail.com");
+      /*  Patient paciente2 = new Patient("Facundo Peralta", "eldelasfotos@mail.com");
         System.out.println("-----------");
         paciente2.setWeight(110.00);
         System.out.println(paciente2.getWeight());
@@ -44,9 +44,17 @@ public class Main {
         }
 
         System.out.println("--Mostrando citas--");
-        System.out.println(myDoctor.getAvailableAppointments());
+        System.out.println(myDoctor.getAvailableAppointments());*/
+        User user = new Doctor("Facundo","facundo@mail.com");
+        user.showDataUser();
+        User user2 = new Patient("Ezequiel","eze@mail.com");
 
-
+        User usuariAnonimo = new User("facu","hola@mail.com") {
+            @Override
+            public void showDataUser() {
+                System.out.println("queso");
+            }
+        };
 
     }
 }
